@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Services.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <header id="header">
+    <nav class="navigation">
+      <div class="container">
+        <div class="logo">
+          <img src="logo.jpg" alt="image 0">
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="Services.html">SERVICES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    
+        <section class="home" id="home">
+    
+            <div class="picpic">
+                <div class="background-imagess">
+                    <!-- <img src="backpic2.jpg" alt="Image 1"> -->
+                    <!-- <img src="backpic3.jpg" alt="Image 2"> -->
+                    <!-- <img src="backpic4.jpg" alt="Image 3"> -->
+                </div>
+            </div>
+            <div class="home-content">
+                <!-- <h1>Providing Quality Care Services<br><span>Supporting adults who want to live safely and independently in their own homes.</span></br></h1> -->
+            
+            </div>
+        </section>
+
+        <section class="agency" id="agency">
+            <h2>Welcome To Hearts Of Care Agency</h2>
+    
+            <div class="context">
+                <img src="hearts.jpg" alt="image 2">
+    
+                
+            </div>
+            <div class="paragraph">
+                <p>Hearts of Care Agency is a Domiciliary Care Agency providing live-in carers and care services to adults, allowing them to live safely and independently in their own homes. Live-in home care can provide the practical and emotional support needed to help your loved one stay healthy and happy in the home they love. We understand that choosing care can be difficult, and that is why we are here to help you make the process as smooth as possible.</p>
+                <!-- <p>Are you, or someone close to you, in need of a bit of extra support at home? Hearts of Care Agency is a home care agency that tailors its flexible service to the needs of each individual client. Duties can include preparing meals, assisting with shopping, providing companionship, administering medication and accompanying you or your loved one to appointments. Even if you don’t know exactly what tasks you need help with, you know that you want your care delivered with respect, dignity and compassion.</p>
+                <p>If you have used a care company before, then you will know that it’s more than just the delivery of care that’s important. It’s also about how the service is managed. At Hearts of Care we put the well-being and quality of life of our clients at the heart of what we do. Our company is based on traditional nurse-led values. We hire only the best care staff, pay them properly and give them the time and resources they need to do their job well.</p> -->
+    
+                <button class="my-button">More About Us</button>
+            </div>
+    
+        </section>
+
+
+        <section>
+            <div class="containerx">
+                <div class="background"></div>
+                <div class="cardx">
+                  <div class="card-contentx">
+                    <h2>TESTIMONIALS</h2>
+                    <h4>Kind Words About Our Care</h4>
+                    <p>“Raquel has been looking after my 92 year old mother as a live-in carer. She is bubbly, friendly and kind and mum loves her because she can cook great food! As well as all mum’s personal care, she cleans the house and does the shopping and takes mum out and about, and also brings her to my house for lunch. Raquel will sit with mum in the evenings and keep her company. Mum is happy when Raquel is caring for her which is exactly what we needed in a carer.”</p>
+                    <h5>Franka Holden</h5>
+                    <br>
+                    
+                    <p>Like our services?
+                      <br>
+                      We would love to hear about your experience.</p>
+                      <button class="my-button">Write a review</button>
+                  </div>
+                </div>
+              </div>
+    
+        </section>
+
+
+        <footer class="footer">
+            <div class="container">
+              <div class="footer-logo">
+                <img src="logo.jpg" alt="Hearts of Care Logo">
+              </div>
+              <div class="footer-info">
+                <h3>Our Services</h3>
+                <p>Home</p>
+                <p>Live-in Care</p>
+                <p>Respite Care</p>
+                <p>Convalescent Care</p>
+                <p>Dimentia Care</p>
+                <p>Companion Care</p>
+                <p>End-of-Life Care</p>
+              </div>
+              <div class="footer-hours">
+                <h3>GET IN TOUCH</h3>
+                <ul>
+                  <li>Raquel - 07473 157429</li>
+                  <li>Office - 01473 722705</li><br>
+                  
+                  <li> admin@heartsofcareagency.co.uk</li><br>
+                  <li><b>Basepoint - Ipswich, Ransomes Europark</b></li>
+                  <li>Unit 58, Basepoint, 70-72 The Havens, Ransomes Industrial Estate, Ipswich, IP3 9BF</li>
+                </ul>
+              </div>
+              <div class="footer-social">
+                <h3>OUR HOURS</h3>
+                <ul>
+                  <li>Friday: 8am-7pm</li>
+                  <li>Saturday: 8am-7pm</li>
+                  <li>Sunday: 9am-5pm</li>
+                  <li>Monday: 8am- 7pm</li>
+                  <li>Tuesday: 8am- 7pm</li>
+                  <li>Wednesday: 8am- 7pm</li>
+                  <li>Thursday: 8am- 7pm</li>
+                </ul>
+                <p>INTERESTED IN JOINING OUR CARE TEAM?</p>
+                <p>We welcome experienced and new carers.</p>
+    
+                <button class="my-button">Apply</button>
+              </div>
+            </div>
+          </footer>
+
+        <script>
+  // Select the necessary elements
+  const header = document.getElementById('header');
+  const navLinks = document.querySelector('.nav-links');
+
+  // Function to handle scroll
+  function handleScroll() {
+    const scrollPosition = window.scrollY;
+
+    // Add 'scrolled' class to header when scrolled
+    if (scrollPosition > 50) {
+      header.classList.add('scrolled');
+      navLinks.classList.add('scrolled-link');
+    } else {
+      header.classList.remove('scrolled');
+      navLinks.classList.remove('scrolled-link');
+    }
+  }
+
+  // Listen for scroll events
+  window.addEventListener('scroll', handleScroll);
+</script>
+    
+</body>
+</html>
